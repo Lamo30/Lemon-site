@@ -72,6 +72,12 @@ body{
     transition: all 0.3s;
 }
 
+.header-one div:last-child a:last-child:hover{
+    background: #3557c7;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(65, 105, 225, 0.3)
+}
+
 .section-one{
     text-align: center;
     padding-top: 2rem;
@@ -90,7 +96,7 @@ body{
     text-align: left;
 }
 
-.sms h1{
+.sms h1, #text, .cursor{
     font-size: 3.5rem;
     font-weight: 800;
     color: #1a1a1a;
@@ -98,6 +104,7 @@ body{
     margin-bottom: 2rem;
     letter-spacing: -0.02em;
     line-height: 1.5;
+    width: 80%;
 }
 
 .sms p{
@@ -128,6 +135,12 @@ body{
     transition: all 0.3s;
 }
 
+.btn-now:hover{
+    background-color: #3557c7;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(65, 105, 225, 0.3);
+}
+
 .btn-info{
     text-decoration: none;
     padding: 14px 32px;
@@ -138,6 +151,13 @@ body{
     background: transparent;
     border: 2px solid #1a1a1a;
     transition: all 0.3s;
+}
+
+.btn-info:hover{
+    background-color: #1a1a1a;
+    color: white;
+    transform: translateY(-1px);
+    border: 2px solid #2937f0;
 }
 
 .last img{
@@ -210,6 +230,11 @@ span{
     transition: all 0.3s;
 }
 
+.encompass:hover{
+    background: #f3f4f6;
+    transform: translateX(4px);
+}
+
 .numbers{
     gap: 100px;
     display: flex;
@@ -276,6 +301,12 @@ span{
     font-weight: 600;
     font-size: 18px;
     transition: all 0.3s;
+}
+
+.order-now:hover{
+    background: #3557c7;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(65, 105, 225, 0.3)
 }
 
 .services{
@@ -417,6 +448,7 @@ span{
     color: #1a1a1a;
     margin-bottom: 20px;
     text-align: left;
+    text-transform: capitalize;
 }
 
 .notes div:first-child p{
@@ -431,6 +463,7 @@ span{
 .review-pic{
     flex: 0 0 auto;
     width: 40.33333333%;
+    position: relative;
 }
 
 .review-pic img{
@@ -438,7 +471,398 @@ span{
     border-radius: 20px;
 }
 
+.review-comments p{
+    position: absolute;
+    background: red;
+    top: 12px;
+    right: 38px;
+    max-width: 700px;
+    text-align: start;
+}
+
 .section-five{
     background: white;
     padding: 80px 0;
+    text-align: center;
+}
+
+.section-five-house{
+    padding-inline: 20px;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.section-five h2{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: yellow;
+}
+
+.section-six{
+    background: white;
+    padding: 80px 0;
+}
+
+.about-us{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.about-logo{
+    display: flex;
+    justify-content: center;
+    width: 15%
+}
+.about-logo img{
+    width: 100%;
+    height: inherit;
+    object-fit: fill;
+}
+
+.about{
+    max-width: 30%;
+    font-size: 20px;
+}
+
+
+.about p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #393232;
+    margin-bottom: 1.2rem;
+}
+
+.section-seven{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.customer-care{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} 
+
+.customer-rep{
+    width: 40%;
+}
+
+
+.customer-rep img{
+    width: 65%;
+    height: inherit;
+    border-radius: 130px;
+}
+
+.rep-message{
+    justify-content: center;
+    text-align: left;
+    width: 40%;
+}
+
+.rep-message h2{
+    color: white;
+    font-weight: 700;
+    font-size: 70px;
+    margin-bottom: 3rem;
+}
+
+.rep-message p {
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.rep-message a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    padding: 18px 32px;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+.rep-message a:hover{
+    color: black;
+    background-color: #d3d4d5;
+    border-color: #c6c7c8;
+}
+
+.section-eight{
+    background: #f8f9fb;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-eight h2{
+    font-size: 3.5rem;
+}
+
+.features-house{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.features{
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 50px 30px;
+    text-align: center;
+    transition: all 0.3s;
+    flex: 0 0 auto;
+    width: 48%;
+}
+
+.features:hover{
+    border-color: #4169E1;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(65, 105, 225, 0.15);
+}
+
+.features-icon img{
+    width: 70px;
+    height: inherit;
+}
+
+.features-caption h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.section-nine{
+    text-align: center;
+    background: linear-gradient(45deg, #496fd9, #e3b757);
+    padding: 80px 0;
+}
+
+.section-nine h2{
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.sign-up{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sign-up a{
+    text-decoration: none;
+    color: #1a1a1a;
+    background-color: white;
+    font-weight: 600;
+    font-size: 25px;
+    padding-right: 1.8rem;
+    padding-left: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-radius: 15px;
+}
+
+.sign-up a:hover{
+    color: black;
+    background-color: #d3d4d5;
+    border-color: #c6c7c8;
+}
+
+footer{
+    background-color: #1a1a1a;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    gap: 800px;
+}
+
+footer div p{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.tems{
+    display: flex;
+    gap: 10px;
+}
+
+.tems a{
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tems a:hover{
+    color: #4169e1;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav{
+        display: none;
+    }
+
+    .header-one div a{
+        display: none;
+    }
+
+    .housing{
+        display: block;
+    }
+
+    .sms, .sms h1, .sms p{
+        width: 100%;
+    }
+
+    .last{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .last img{
+        width: 100%;
+    }
+
+    .row{
+        display: block;
+    }
+
+    .altogether{
+        margin-bottom: rem;
+    }
+
+    .banner{
+        display: block;
+    }
+
+    .banner-icons{
+        flex-wrap: wrap;
+    }
+
+    .house-one{
+        display: block;
+    }
+
+    .notes{
+        display: block;
+    }
+
+    .notes div:first-child h2{
+        font-size: 40px;
+    }
+
+    .notes div:first-child p {
+        font-size: 1rem;
+    }
+
+    .section-five h2{
+        font-size: 2.5rem;
+    }
+
+    .testimonials{
+        display: block;
+    }
+
+    .about-us{
+        display: block;
+        width: 100%;
+    }
+
+    .about{
+        max-width: none;
+        width: 100%;
+    }
+
+    .about p{
+        font-size: 1rem;
+        width: 90%;
+        text-align: left;
+    }
+
+    .about-logo{
+        width: 100%;
+    }
+
+    .customer-care{
+        display: block;
+    }
+
+    .customer-rep{
+        width: 100%;
+    }
+
+    .rep-message{
+        width: 100%;
+        text-align: center;
+    }
+
+    .rep-message h2{
+        font-size: 25px;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .rep-message p{
+        width: 100%;
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .rep-message a{
+        padding: 14px 22px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .section-eight h2 {
+        font-size: 2.5rem;
+    }
+
+    .features-house{
+        margin-top: 2rem;
+        max-width: 500%;
+    }
+
+    .features{
+        width: 88%;
+    }
+
+    footer div{
+        display: block;
+    }
+
+    footer div p{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
 }
