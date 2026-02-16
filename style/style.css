@@ -5,8 +5,12 @@
 }
 
 header{
-    position: sticky;
     top: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
     background-color: #e8edf5;
     color: #212529;
     font: 16px 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -45,7 +49,7 @@ body{
     text-decoration: none;
     color: #212529;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 15px; /* 20px */
 }
 
 .header-one div:last-child{
@@ -58,7 +62,7 @@ body{
     text-decoration: none;
     color: #212529;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 15px; /* 20px */
 }
 
 .header-one div:last-child a:last-child{
@@ -68,7 +72,7 @@ body{
     border-radius: 8px;
     padding: 10px 24px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 15px; /* 20px */
     transition: all 0.3s;
 }
 
@@ -80,7 +84,7 @@ body{
 
 .section-one{
     text-align: center;
-    padding-top: 2rem;
+    padding: 120px 0 80px;
     /* margin-top: 6rem; */
     background: #e8edf5;
 }
@@ -111,7 +115,7 @@ body{
     color: #5a5a5a;
     line-height: 1.7;
     font-weight: 400;
-    font-size: 25px;
+    font-size: /* 25px */1.1rem;
     width: 64%;
     margin-bottom: 5%;
     margin-top: 5%;
@@ -125,7 +129,7 @@ body{
 .btn-now {
     color: white;
     font-weight: 600;
-    font-size: 20px;
+    font-size: /* 20px */16px;
     background-color: #4169e1;
     padding: 14px 32px;
     border-radius: 10px;
@@ -145,7 +149,7 @@ body{
     text-decoration: none;
     padding: 14px 32px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: /* 20px */ 16px;
     border-radius: 10px;
     color: #1a1a1a;
     background: transparent;
@@ -172,7 +176,7 @@ body{
 
 .service-icons p{
     color: #9ca3af;
-    font-size: 20px;
+    font-size: /* 20px */ 14px;
     margin-bottom: 2%;
 }
 
@@ -205,7 +209,7 @@ body{
 }
 
 .section-two h2{
-    font-size: 40px;
+    font-size: /* 40px */2.5rem;
     margin-bottom: 50px;
 }
 
@@ -217,6 +221,11 @@ span{
     justify-content: center;
     display: flex;
     gap: 80px;
+    flex-wrap: wrap;
+}
+
+.altogether{
+    width: fit-content;
 }
 
 .encompass{
@@ -255,7 +264,7 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: /* 20px */ 16px;
 }
 
 .amazon{
@@ -265,11 +274,11 @@ span{
 .amazon div:first-child{
     font-weight: 600;
     color: #1a1a1a;
-    font-size: 20px;
+    font-size: /* 20px */16px;
 }
 
 .amazon div:last-child{
-    font-size: 18px;
+    font-size: /* 18px */14px;
     color: #6b7280;
 }
 
@@ -281,13 +290,13 @@ span{
 
 .orders{
     color: #6b7280;
-    font-size: 18px;
+    font-size: /* 18px */14px;
     font-weight: 700;
 }
 
 .price{
     color: #1a1a1a;
-    font-size: 18px;
+    font-size: /* 18px */ 16px;
     font-weight: 700;
 }
 
@@ -299,7 +308,7 @@ span{
     border-radius: 8px;
     padding: 10px 24px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: /* 18px */15px;
     transition: all 0.3s;
 }
 
@@ -320,8 +329,8 @@ span{
     text-decoration: none;
     border-radius: 8px;
     padding: 10px 24px;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: /* 700 */600;
+    font-size: /* 18px */15px;
     transition: all 0.3s;
 }
 
@@ -332,9 +341,55 @@ span{
     transform: translateY(-1px);
 }
 
+.wor{
+    width: 22.33%;
+}
+
 .reviews{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
+    gap: 5%;
+}
+
+.iconz{
+    /* display: flex; */
+    /* justify-content: top;
+    align-items: top;
+    gap: 5%;
+    flex-wrap: wrap; */
+    width: 45.555%;
+}
+
+.iconz img{
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.iconx{
+    width: 20%;
+}
+
+.iconx img{
+    width: 100%;
+}
+
+.comments{
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.comments h4{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.comments p{
+    color: #6b7280;
+    line-height: 1.6;
+    margin: 0;
+    font-size: /* 18px */16px;
 }
 
 .banner{
@@ -377,14 +432,14 @@ span{
 }
 
 .banner h3{
-    font-size: 3.5rem;
+    font-size: /* 3.5rem */2.5rem;
     font-weight: 700;
     color: #4169E1;
     margin-bottom: 5px;
 }
 
 .figures{
-    font-size: 2.8rem;
+    font-size: /* 2.8rem */1.8rem;
     font-weight: 700;
     color: #4169E1;
 }
@@ -399,17 +454,43 @@ span{
     font-size: 2.5rem;
     font-weight: 700;
     color: #1a1a1a;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .house-one{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 7%;
+}
+
+.house-two{
+    width: 40%;
+    align-items: center;
 }
 
 .house-three{
     display: flex;
+    gap: 5%;
+}
+
+.house-three-comments{
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.house-three-comments h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.house-three-comments p{
+    color: #6b7280;
+    line-height: 1.7;
+    margin: 0;
 }
 
 .house-three img{
@@ -418,13 +499,107 @@ span{
 }
 
 .lodge{
-    /* width: 50%; */
+    /* width: 0%;*/
 }
 
-.lodge img{
+.lodge-one{
+    max-width: 400px;
+    margin: 0 auto;
+    background: #2d3748;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.lodge-two{
+    background: #1a202c;
+    border-radius: 20px;
+    padding: 20px;
+    min-height: 600px;
+}
+
+.blck-one{
+    text-align: center;
+    color: white;
+    padding: 15px;
+    background: #374151;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.blck-one p:first-child{
+    font-size: 12px;
+    opacity: 0.7;
+    margin-bottom: 8px;
+}
+
+.blck-one p:last-child{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.blck-two{
+    background: #374151;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.blck-two p{
+    color: #9ca3af;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.blck-two button{
+    background: #4169E1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.blck-three{
+    background: #374151;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.blck-three p:first-child{
+    color: white;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.blck-three p:nth-child(2){
+    color: #9ca3af;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.blck-three button{
+    background: #10b981;
+    color: white;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.blck-three p:last-child{
+    color: #9ca3af;
+    font-size: 11px;
+    margin-top: 8px;
+}
+/* .lodge img{
     width: 350px;
     height: 500px;
-}
+} */
 
 .section-four{
     text-align: center;
@@ -443,7 +618,7 @@ span{
 }
 
 .notes div:first-child h2{
-    font-size: /* 2.5rem */ 5.5rem; 
+    font-size: 2.5rem  /* 5.5rem */; 
     font-weight: 700;
     color: #1a1a1a;
     margin-bottom: 20px;
@@ -454,7 +629,7 @@ span{
 .notes div:first-child p{
     color: #6b7280;
     line-height: 1.7;
-    font-size: /* 1rem */1.5rem;
+    font-size:  1rem /* 1.5rem */;
     margin-top: 0;
     margin-bottom: 1rem;
     text-align: left;
@@ -467,7 +642,7 @@ span{
 }
 
 .review-pic img{
-    width: 100%;
+    width: 70%;
     border-radius: 20px;
 }
 
@@ -493,7 +668,7 @@ span{
 }
 
 .section-five h2{
-    font-size: 3.5rem;
+    font-size: 2.5rem /* 3.5rem */;
     font-weight: 700;
     color: #1a1a1a;
     text-align: center;
@@ -523,7 +698,7 @@ span{
 .about-logo{
     display: flex;
     justify-content: center;
-    width: 15%
+    width: 20%
 }
 .about-logo img{
     width: 100%;
@@ -538,7 +713,7 @@ span{
 
 
 .about p{
-    font-size: 1.5rem;
+    font-size: /* 1.5rem */1rem;
     line-height: 1.8;
     color: #393232;
     margin-bottom: 1.2rem;
@@ -563,7 +738,7 @@ span{
 
 
 .customer-rep img{
-    width: 65%;
+    width: 60%;
     height: inherit;
     border-radius: 130px;
 }
@@ -577,14 +752,14 @@ span{
 .rep-message h2{
     color: white;
     font-weight: 700;
-    font-size: 70px;
+    font-size: 47px /* 70px */;
     margin-bottom: 3rem;
 }
 
 .rep-message p {
-    width: 100%;
+    width: 80%;
     color: white;
-    font-size: 2rem;
+    font-size: 16px /* 2rem */;
     margin-bottom: 5rem;
 }
 
@@ -593,8 +768,8 @@ span{
     background-color: white;
     color: black;
     font-weight: 600;
-    padding: 18px 32px;
-    font-size: 22px;
+    padding: 14px 32px;
+    font-size: 16px;
     border-radius: 10px;
 }
 
@@ -611,7 +786,7 @@ span{
 }
 
 .section-eight h2{
-    font-size: 3.5rem;
+    font-size: /* 3.5rem */2.5rem;
 }
 
 .features-house{
@@ -633,6 +808,7 @@ span{
     transition: all 0.3s;
     flex: 0 0 auto;
     width: 48%;
+    height: 100%;
 }
 
 .features:hover{
@@ -650,6 +826,13 @@ span{
     font-size: 1.3rem;
     font-weight: 700;
     color: #1a1a1a;
+    margin: 20px 0 12px;
+}
+
+.features-caption p{
+    color: #5a5a5a;
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 .section-nine{
@@ -660,7 +843,7 @@ span{
 
 .section-nine h2{
     color: white;
-    font-size: 3rem;
+    font-size: /* 3rem */2.5rem;
     font-weight: 700;
     margin-bottom: 2rem;
 }
@@ -676,12 +859,13 @@ span{
     color: #1a1a1a;
     background-color: white;
     font-weight: 600;
-    font-size: 25px;
-    padding-right: 1.8rem;
+    font-size: /* 25px */16px;
+    /* padding-right: 1.8rem;
     padding-left: 1.5rem;
     padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    border-radius: 15px;
+    padding-bottom: 0.75rem; */
+    padding: 6px 24px;
+    border-radius: 10px;
 }
 
 .sign-up a:hover{
@@ -704,7 +888,7 @@ footer div{
 
 footer div p{
     color: white;
-    font-size: 20px;
+    font-size: /* 20px */16px;
     font-weight: 600;
     text-align: left;
 }
@@ -718,7 +902,7 @@ footer div p{
     color: #9ca3af;
     text-decoration: none;
     transition: color 0.3s;
-    font-size: 20px;
+    font-size: /* 20px */16px;
     font-weight: 600;
 }
 
@@ -758,7 +942,11 @@ footer div p{
     }
 
     .altogether{
-        margin-bottom: rem;
+        margin-bottom: 4rem;
+    }
+
+    .wor{
+        width: 100%;
     }
 
     .banner{
@@ -769,8 +957,16 @@ footer div p{
         flex-wrap: wrap;
     }
 
+    .section-three h2{
+        margin-bottom: 40px;
+    }
+
     .house-one{
         display: block;
+    }
+
+    .house-two{
+        width: 100%;
     }
 
     .notes{
@@ -778,15 +974,15 @@ footer div p{
     }
 
     .notes div:first-child h2{
-        font-size: 40px;
+        /* font-size: 40px; */
     }
 
     .notes div:first-child p {
-        font-size: 1rem;
+        /* font-size: 1rem; */
     }
 
     .section-five h2{
-        font-size: 2.5rem;
+        /* font-size: 2.5rem; */
     }
 
     .testimonials{
@@ -804,7 +1000,7 @@ footer div p{
     }
 
     .about p{
-        font-size: 1rem;
+        /* font-size: 1rem; */
         width: 90%;
         text-align: left;
     }
@@ -827,25 +1023,25 @@ footer div p{
     }
 
     .rep-message h2{
-        font-size: 25px;
+       /*  font-size: 25px; */
         width: 100%;
         margin-bottom: 1rem;
     }
 
     .rep-message p{
         width: 100%;
-        font-size: 1rem;
+        /* font-size: 1rem; */
         margin-bottom: 3rem;
     }
 
     .rep-message a{
         padding: 14px 22px;
-        font-size: 16px;
+        /* font-size: 16px; */
         font-weight: 400;
     }
 
     .section-eight h2 {
-        font-size: 2.5rem;
+        /* font-size: 2.5rem; */
     }
 
     .features-house{
