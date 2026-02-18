@@ -39,3 +39,11 @@ function typeLoop() {
 }
 
 typeLoop();
+
+
+function toggleMenu(){
+  const element = document.querySelector('#headerOne')
+  element.classList.toggle('show')
+  const overlay = document.querySelector('.overlay')
+  overlay.classList.toggle('show')
+}

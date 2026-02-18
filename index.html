@@ -4,28 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <title>Document</title>
+    <title>InstantSms</title>
+    <link rel="icon" href="img/social_logo.png">
     <script src="js/main.js" defer></script>
 </head>
 
 <body>
+    <div class="overlay" onclick="toggleMenu()"></div>
     <header>
-        <div class="header-one">
+        <div class="header-one" id="headerOne">
             <div class="logo">
                 <img src="img/social_logo.png" alt="">
             </div>
-            <div class="nav">
-                <a href="">Home</a>
-                <a href="">About Us</a>
-                <a href="">Contact Us</a>
-                <a href="">How to Use</a>
+                <div class="nav">
+                    <a href="">Home</a>
+                    <a href="">About Us</a>
+                    <a href="">Contact Us</a>
+                    <a href="">How to Use</a>
+                </div>
+                <div class="tabs">
+                    <a href="log-in.html" target="_blank">Log In</a>
+                    <a href="sign-up.html" target="_blank">Sign Up</a>
+                </div>
+        </div>
+        <div class="subst">
+            <div class="logo-media">
+                <img src="img/social_logo.png" alt="">
             </div>
-            <div>
-                <a href="">Log In</a>
-                <a href="">Sign Up</a>
-            </div>
+            <button class="hamburger-btn" onclick="toggleMenu()">
+                <img src="icons/burger.svg" alt="">
+        </button>
         </div>
     </header>
+    
 
     <main>
         <section class="section-one">
@@ -74,8 +85,8 @@
                                 </div>
                             </div>
                             <div class="stats">
-                                <div class="orders">9475 Orders</div>
-                                <div class="price">$160</div>
+                                <div class="orders">9225 Orders</div>
+                                <div class="price">₦150</div>
                                 <a href="" class="order-now">
                                     <div>Order Now</div>
                                 </a>
@@ -92,8 +103,8 @@
                                 </div>
                             </div>
                             <div class="stats">
-                                <div class="orders">9475 Orders</div>
-                                <div class="price">$160</div>
+                                <div class="orders">8975 Orders</div>
+                                <div class="price">₦290</div>
                                 <a href="" class="order-now">
                                     <p>Order Now</p>
                                 </a>
@@ -110,8 +121,8 @@
                                 </div>
                             </div>
                             <div class="stats">
-                                <div class="orders">9475 Orders</div>
-                                <div class="price">$160</div>
+                                <div class="orders">6895 Orders</div>
+                                <div class="price">₦410</div>
                                 <a href="" class="order-now">
                                     <p>Order Now</p>
                                 </a>
@@ -128,8 +139,8 @@
                                 </div>
                             </div>
                             <div class="stats">
-                                <div class="orders">9475 Orders</div>
-                                <div class="price">$160</div>
+                                <div class="orders">6775 Orders</div>
+                                <div class="price">₦300</div>
                                 <a href="" class="order-now">
                                     <p>Order Now</p>
                                 </a>
@@ -146,8 +157,8 @@
                                 </div>
                             </div>
                             <div class="stats">
-                                <div class="orders">9475 Orders</div>
-                                <div class="price">$160</div>
+                                <div class="orders">3975 Orders</div>
+                                <div class="price">$590</div>
                                 <a href="" class="order-now">
                                     <p>Order Now</p>
                                 </a>
@@ -325,10 +336,12 @@
            <div class="section-five-house">
                 <div class="testimonials">
                     <div class="testimonial-card">
-                        <div class="testimonial-ratings"></div>
+                        <div class="testimonial-ratings">
+                            <p>★★★★★</p>
+                        </div>
                         <div class="testimonial-comments">
                             <h4>Smooth process</h4>
-                            <p>
+                            <p class="testimonial-reviews">
                                 Had an error of not being able to buy one of the number services and the owner solved the issue within 30 seconds of me telling him. 10/10 site, only one I use for sms verifications.
                             </p>
                             <p class="testimonial-author">
@@ -337,62 +350,72 @@
                         </div>
                     </div>
                     <div class="testimonial-card">
-                        <div class="testimonial-ratings"></div>
+                        <div class="testimonial-ratings">
+                            <p>★★★★★</p>
+                        </div>
                         <div class="testimonial-comments">
-                            <h4>Smooth process</h4>
-                            <p>
-                                Had an error of not being able to buy one of the number services and the owner solved the issue within 30 seconds of me telling him. 10/10 site, only one I use for sms verifications.
+                            <h4>Cheap and reliable service</h4>
+                            <p class="testimonial-reviews">
+                                Cheap and reliable, easy to navigate and auto refund for unused numbers. I haven't tried many others but that's because I found this first and always liked it.
                             </p>
                             <p class="testimonial-author">
-                                Shabanban
+                                Randy
                             </p>
                         </div>
                     </div>
                     <div class="testimonial-card">
-                        <div class="testimonial-ratings"></div>
+                        <div class="testimonial-ratings">
+                            <p>★★★★★</p>
+                        </div>
                         <div class="testimonial-comments">
-                            <h4>Smooth process</h4>
-                            <p>
-                                Had an error of not being able to buy one of the number services and the owner solved the issue within 30 seconds of me telling him. 10/10 site, only one I use for sms verifications.
+                            <h4>Best SMS provider</h4>
+                            <p class="testimonial-reviews">
+                                Best SMS provider by far, great prices, good UI, great uptime, great selection, good payment selection, just love this site. I recommend this site to everyone
                             </p>
                             <p class="testimonial-author">
-                                Shabanban
+                                Chisom
                             </p>
                         </div>
                     </div>
                     <div class="testimonial-card">
-                        <div class="testimonial-ratings"></div>
+                        <div class="testimonial-ratings">
+                            <p>★★★★★</p>
+                        </div>
                         <div class="testimonial-comments">
-                            <h4>Smooth process</h4>
-                            <p>
-                                Had an error of not being able to buy one of the number services and the owner solved the issue within 30 seconds of me telling him. 10/10 site, only one I use for sms verifications.
+                            <h4>Most reliable SMS verifications</h4>
+                            <p class="testimonial-reviews">
+                                Gonna be honest, I have used a lot of sms providers the last few years. And SMSPool is probably the best one out there, fast support, high uptime and extremely lowkey.
                             </p>
                             <p class="testimonial-author">
-                                Shabanban
+                                Berry
                             </p>
                         </div>
                     </div>
                     <div class="testimonial-card">
-                        <div class="testimonial-ratings"></div>
+                        <div class="testimonial-ratings">
+                            <p>★★★★★</p>
+                        </div>
                         <div class="testimonial-comments">
-                            <h4>Smooth process</h4>
-                            <p>
-                                Had an error of not being able to buy one of the number services and the owner solved the issue within 30 seconds of me telling him. 10/10 site, only one I use for sms verifications.
+                            <h4>Convenient SMS verifications</h4>
+                            <p class="testimonial-reviews">
+                                Very convenient and guaranteed refund instantly in your credits if the number doesn't work which the service I used before didn't do
                             </p>
                             <p class="testimonial-author">
-                                Shabanban
+                                Akili
                             </p>
                         </div>
                     </div>
                     <div class="testimonial-card">
-                        <div class="testimonial-ratings"></div>
+                        <div class="testimonial-ratings">
+                            <p>★★★★★</p>
+                        </div>
                         <div class="testimonial-comments">
-                            <h4>Smooth process</h4>
-                            <p>
-                                Had an error of not being able to buy one of the number services and the owner solved the issue within 30 seconds of me telling him. 10/10 site, only one I use for sms verifications.
+                            <h4>Best SMS Service without a doubt!</h4>
+                            <p class="testimonial-reviews">
+                                Their user-friendly service has truly been a game-changer for my business. From day one, I was impressed by how easy it was to navigate their platform.
                             </p>
                             <p class="testimonial-author">
-                                Shabanban
+                                Lemon
                             </p>
                         </div>
                     </div>
@@ -403,13 +426,13 @@
             <div class="about-us">
                 <div class="about">
                     <p>
-                        <span>"Socialsmswrld" </span>gives you the opportunity to buy a virtual number for registration in popular services at the best price on the net. Previously, to register an additional account in a social network or messenger you had to buy a SIM-card or ask your husband/wife to share the phone (which is not always possible).
+                        <span>"InstantSms" </span>provides the opportunity to purchase a virtual number for registration in popular services at unique price on the net. Previously, to register an subsequent account in a social network or messenger you had to buy a SIM-card or ask your spouse to share the phone (which is discormfortings).
                     </p>
                     <p>
                         First of all, it costs money to get a new SIM card. Secondly, it is a whole event - to come to the office, fill out a form with passport data...
                     </p>
                     <p>
-                        On this site you can buy a virtual phone number for Telegram, Whatsapp, Viber, Instagram, Facebook, and any other popular platform from just NGN 2000.
+                        The service is suitable for users who need one-time SMS verification of accounts in social networks, messengers, payment systems, dating sites and any other services that require SMS verification.
                     </p>
                 </div>
                 <div class="about-logo">
@@ -417,7 +440,7 @@
                 </div>
                 <div class="about">
                     <p>
-                        The service is suitable for users who need one-time SMS verification of accounts in social networks, messengers, payment systems, dating sites and any other services that require SMS verification.
+                        <span>"InstantSms"</span> enables you to purchase a virtual phone number for Telegram, Whatsapp, Viber, Instagram, Facebook, and any other popular platform from just NGN 2000.
                     </p>
                     <p>
                         Get a virtual phone number in just a few minutes!
@@ -463,7 +486,7 @@
                 </div>
                 <div class="features">
                     <div class="features-icon">
-                        <img src="icons/basket-icon.svg" alt="">
+                        <img src="icons/mailbox.svg" alt="">
                     </div>
                     <div class="features-caption">
                         <h3>Place your Order</h3>
@@ -474,7 +497,7 @@
                 </div>
                 <div class="features">
                     <div class="features-icon">
-                        <img src="icons/basket-icon.svg" alt="">
+                        <img src="icons/sam-phone.svg" alt="">
                     </div>
                     <div class="features-caption">
                         <h3>Get the OTP</h3>
@@ -485,7 +508,7 @@
                 </div>
                 <div class="features">
                     <div class="features-icon">
-                        <img src="icons/basket-icon.svg" alt="">
+                        <img src="icons/money.svg" alt="">
                     </div>
                     <div class="features-caption">
                         <h3>Easy To Recharge</h3>

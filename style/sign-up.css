@@ -1,11 +1,15 @@
-body{
-   /*  background-color: red;*/
-} 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .container{
     justify-content: center;
     align-items: center;
     display: flex;
+    background-color: #f9fafb;
+    padding: 80px;
 }
 
 .background{
@@ -13,11 +17,12 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: red;
+    background-color: white;
     padding-inline: 2rem;
     max-width: 40%;
     height: 100%;
     font-family: 'poppins', sans-serif;
+    border-radius: 15px;
 }
 
 .logo {
@@ -69,6 +74,7 @@ form div{
 .form-input{
     border-radius: 0.375rem;
     border-width: 1px;
+    border: 1px solid #f9fafb;
     --tw-border-opacity: 1;
     border-color: rgb(224 230 237 / var(--tw-border-opacity));
     --tw-bg-opacity: 1;
@@ -79,8 +85,8 @@ form div{
     font-weight: 600;
     --tw-text-opacity: 1;
     color: rgb(14 23 38 / var(--tw-text-opacity));
-    outline: 2px solid #0000;
-    outline-offset: 2px;
+    /*outline: 2px solid #0000;
+    outline-offset: 2px; */
 }
 
 .background button{
@@ -99,7 +105,13 @@ form div{
     outline-offset: 2px;
     background: #496fd9;
     width: 100%;
-    box-shadow: var(0 0 #0000, 0 0 #0000), var(0 0 #000, 0 0 #0000), var(0 0 #0000)
+    border: none;
+}
+
+.background button:hover{
+    cursor: pointer;
+    transform: translateX(6px);
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 10px 20px -10px #4361ee99;
 }
 
 .or{
@@ -112,7 +124,7 @@ form div{
 }
 
 .left, .right{
-    border-top: 1px solid grey;
+    border-top: 1px solid #f9fafb;
     width: 100%;
 }
 
@@ -125,11 +137,6 @@ ul{
 }
 
 ul li {
-    list-style: none;
-    text-align: center;
-}
-
-ul li a {
     display: flex;
     padding: 0.75rem 0.2rem;
     font-size: 0.875rem;
@@ -145,14 +152,44 @@ ul li a {
     background-color: #fff;
     cursor: pointer;
     transition: all .6s ease;
+    width: 90px;
+    justify-content: center;
 }
 
 ul li a img{
-    width: 15%;
+    width: 30px;
 }
 
 .aza {
     font-size: 14px;
     text-align: center;
     font-family: 'poppins', sans-serif;
+    margin-bottom: 1.75rem;
+}
+
+.aza a{
+    text-decoration: none;
+    color: #496fd9;
+}
+
+.aza a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        padding: 40px 10px;
+    }
+
+    .background{
+        max-width: 90%;
+    }
+
+    .form{
+        width: unset;
+    }
+
+    .logo img{
+        width: 50%;
+    }
 }
